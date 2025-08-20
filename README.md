@@ -77,5 +77,14 @@ Make sure you have the following installed on your system:
 
 ## 📁 Project Structure
 
-churn-prediction-app/├── app.py                # Main Flask application file├── model.pkl             # Pre-trained machine learning model├── templates/│   └── index.html        # HTML template for the user interface├── static/│   └── css/│       └── style.css     # CSS for styling the application├── requirements.txt      # List of Python dependencies└── README.md             # Project documentation
+churn-prediction-app/
+├── app.py                # Main Flask application file
+├── model.pkl             # Pre-trained machine learning model
+├── templates/
+│   └── index.html        # HTML template for the user interface
+├── static/
+│   └── css/
+│       └── style.css     # CSS for styling the application
+├── requirements.txt      # List of Python dependencies
+└── README.md             # Project documentation
 ---
