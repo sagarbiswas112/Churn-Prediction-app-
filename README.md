@@ -2,8 +2,7 @@
 
 A web-based application that leverages a machine learning model to predict customer churn. This tool provides businesses with actionable insights by identifying customers who are at high risk of leaving, allowing for proactive retention strategies.
 
-![Screenshot of the application's user interface]
-*<p align="center">Optional: Add a screenshot of your application here.</p>*
+<img width="957" height="693" alt="image" src="https://github.com/user-attachments/assets/c0fb074f-bac6-41f8-84ce-3de5e6a527ec" />
 
 ---
 
