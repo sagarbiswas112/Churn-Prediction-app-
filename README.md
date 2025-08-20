@@ -1,90 +1,106 @@
-# Customer Churn Prediction Application
+# Customer Churn Prediction Engine
 
-A web-based application that leverages a machine learning model to predict customer churn. This tool provides businesses with actionable insights by identifying customers who are at high risk of leaving, allowing for proactive retention strategies.
+> A smart, data-driven web application designed to forecast customer churn, empowering businesses to act before it's too late.
 
-<img width="957" height="693" alt="image" src="https://github.com/user-attachments/assets/c0fb074f-bac6-41f8-84ce-3de5e6a527ec" />
-
----
-
-## ✨ Key Features
-
-- **Predictive Analysis:** Utilizes a trained machine learning model to forecast churn probability based on customer data.
-- **User-Friendly Interface:** A clean and simple UI for inputting customer details and viewing the prediction result.
-- **Real-time Predictions:** Get instant churn predictions to facilitate quick decision-making.
-- **Scalable Architecture:** Built with a modern tech stack that is easy to maintain and extend.
+This project leverages a machine learning model to analyze customer data and predict the likelihood of a customer discontinuing their service. By providing a simple web interface, it makes complex predictive analytics accessible, allowing stakeholders to get instant insights and implement targeted retention strategies.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Screenshots
 
-- **Frontend:** HTML, CSS
-- **Backend:** Python with Flask 
-- **Machine Learning:** Scikit-learn, Pandas, NumPy
-- **Data Handling:** The model was trained on a CSV dataset containing customer information and churn status.
+| Main Interface                                       |
+| ---------------------------------------------------- | 
+|<img width="957" height="693" alt="image" src="https://github.com/user-attachments/assets/c948f938-399c-4aa6-b214-d216fef5956e" />|
+
+*(Note: Replace the image paths with actual screenshots of your application.)*
+
+---
+
+## ✨ Core Features
+
+-   **Intuitive Web Interface:** A clean and straightforward form to input customer data for prediction.
+-   **Instant Predictions:** Utilizes a pre-trained Scikit-learn model to deliver churn probability in real-time.
+-   **Actionable Insights:** The output clearly states whether a customer is likely to "Churn" or "Stay," helping guide business decisions.
+-   **RESTful API Backend:** Built with a lightweight Flask backend that serves the model and handles requests efficiently.
+-   **Scalable Foundation:** The decoupled frontend and backend make it easy to extend features or integrate with other systems.
+
+---
+
+## 🛠️ Technology Stack
+
+This project was built using a combination of data science and web development technologies:
+
+-   **Backend:** **Python** with the **Flask** micro-framework.
+-   **Machine Learning:**
+    -   **Scikit-learn:** For building and training the predictive model.
+    -   **Pandas:** For data manipulation and preprocessing.
+    -   **NumPy:** For numerical operations.
+-   **Frontend:** Standard **HTML**, **CSS**, and **JavaScript** for the user interface.
+-   **Model Persistence:** The trained model is saved and loaded using Python's `pickle` module.
 
 ---
 
 ## ⚙️ Getting Started
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+To get a local copy up and running, please follow these steps.
 
 ### Prerequisites
 
-Make sure you have the following installed on your system:
-- Python 3.8+
-- pip (Python package installer)
+Ensure you have Python 3.8 or newer installed on your machine.
+-   [Download Python](https://www.python.org/downloads/)
 
-### Installation
+### Installation & Setup
 
-1.  **Clone the repository:**
+1.  **Clone the GitHub Repository:**
     ```sh
-    git clone [https://github.com/your-username/churn-prediction-app.git](https://github.com/your-username/churn-prediction-app.git)
-    cd churn-prediction-app
+    git clone [https://github.com/your-username/churn-prediction-engine.git](https://github.com/your-username/churn-prediction-engine.git)
+    cd churn-prediction-engine
     ```
 
-2.  **Create and activate a virtual environment (recommended):**
+2.  **Create and Activate a Virtual Environment:**
+    It's highly recommended to use a virtual environment to manage project dependencies.
     ```sh
-    # For Windows
-    python -m venv venv
-    .\venv\Scripts\activate
-
     # For macOS/Linux
     python3 -m venv venv
     source venv/bin/activate
+
+    # For Windows
+    python -m venv venv
+    .\venv\Scripts\activate
     ```
 
-3.  **Install the required dependencies:**
+3.  **Install Required Libraries:**
+    All necessary packages are listed in the `requirements.txt` file.
     ```sh
     pip install -r requirements.txt
     ```
 
 ---
 
-## 🚀 Usage
+## 🚀 How to Use
 
-1.  **Run the Flask application:**
+1.  **Run the Flask Server:**
+    Execute the main application file from your terminal.
     ```sh
     python app.py
     ```
 
-2.  **Open your web browser** and navigate to `http://127.0.0.1:5000`.
+2.  **Access the Application:**
+    Open your favorite web browser and navigate to the following address:
+    ```
+    [http://127.0.0.1:5000](http://127.0.0.1:5000)
+    ```
 
-3.  **Enter the customer data** into the input form on the web page.
-
-4.  **Click the "Predict" button** to see the churn prediction result. The application will display whether the customer is likely to churn or not.
+3.  **Make a Prediction:**
+    -   Fill in the customer details in the web form.
+    -   Click the **"Predict Churn"** button.
+    -   The application will display the prediction result on the same page.
 
 ---
 
 ## 📁 Project Structure
 
-churn-prediction-app/
-├── app.py                # Main Flask application file
-├── model.pkl             # Pre-trained machine learning model
-├── templates/
-│   └── index.html        # HTML template for the user interface
-├── static/
-│   └── css/
-│       └── style.css     # CSS for styling the application
-├── requirements.txt      # List of Python dependencies
-└── README.md             # Project documentation
+The repository is organized as follows:
+
+.├── app.py                  # The core Flask application logic├── model.pkl               # The pre-trained, serialized ML model├── requirements.txt        # A list of all Python dependencies├── templates/│   └── index.html          # The HTML file for the frontend UI└── static/└── css/└── style.css       # Stylesheet for the application
 ---
