@@ -36,7 +36,7 @@ This project was built using a combination of data science and web development t
     -   **Pandas:** For data manipulation and preprocessing.
     -   **NumPy:** For numerical operations.
 -   **Frontend:** Standard **HTML**, **CSS**, and **JavaScript** for the user interface.
--   **Model Persistence:** The trained model is saved and loaded using Python's `pickle` module.
+-   **Model Persistence:** The trained model is saved and loaded using Python's `joblib` module.
 
 ---
 
